@@ -13,8 +13,8 @@ if [[ $choice -eq 1 ]]; then
     echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
     sudo apt update
     sudo apt install -y nodejs git
-    git clone https://github.com/Solodactyl/solodactyl-panel.git
-    cd solodactyl-panel
+    git clone https://github.com/Solodactyl/Solodactyl-panel.git
+    cd Solodactyl-panel
     npm install
     npm run seed
     npm run createUser
