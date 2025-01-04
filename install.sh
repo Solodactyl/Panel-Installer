@@ -16,6 +16,8 @@ if [[ $choice -eq 1 ]]; then
     sudo apt install -y nodejs git
     git clone https://github.com/Solodactyl/solodactyl-panel.git
     cd solodactyl-panel
+    unzip Solodactyl-panel.zip
+    cd Solodactyl-panel
     npm install
     npm run seed
     npm run createUser
